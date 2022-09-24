@@ -20,5 +20,5 @@ cep.addEventListener('blur',(e)=>{
   .then(response =>{ response.json()
     .then( data => showData(data))
   })
-  .catch(e => console.log('Deu Erro:' + e,messege))    
+  .catch(e => console.error('Deu Erro:' + e.messege))    
 })
